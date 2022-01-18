@@ -7,7 +7,7 @@
 }
 
 .header {
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   background: linear-gradient(to right, #000000, #434343);
   border-bottom: 2px solid rgb(255, 255, 255);
@@ -17,7 +17,14 @@
 }
 
 .logo {
+  width: 3rem;
   height: 3rem;
+  margin: 1rem;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  background: url(http://2.bp.blogspot.com/-5Yl8Tj2M-aE/Ujwj8rH1InI/AAAAAAAAChY/WSs2S8oAArU/s1600/3d-cool-logo-1024x819.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .title {
@@ -27,7 +34,7 @@
 }
 
 .footer {
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   border-top: 2px solid rgb(255, 255, 255);
   background: linear-gradient(to right, #000000, #434343);
@@ -43,16 +50,19 @@
   border: 2px solid rgb(100, 100, 100);
   border-radius: 1rem;
   background-color: rgb(255, 255, 255);
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.25rem;
+  padding-left: 0.5rem;
 }
 
 .button {
+  font-size: 1rem;
+  font-weight: bold;
   width:2rem;
   height:2rem;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  border: 1.5px solid black;
+  border: 2px solid black;
   position: relative;
   cursor: pointer;
   right: 2.15rem;
