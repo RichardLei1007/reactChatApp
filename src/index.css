@@ -1,3 +1,27 @@
+/* 1x */
+html {
+  font-size: 8px;
+}
+/* 1.75x */
+@media only screen and (min-width: 480px) {
+  html {
+      font-size: 14px;
+  }
+}
+/* 2.5x */
+@media only screen and (min-width: 768px) {
+  html {
+      font-size: 20px;
+  }
+}
+/* 3.25x */
+@media only screen and (min-width: 1024px) {
+  html {
+      font-size: 26px;
+  }
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
