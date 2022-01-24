@@ -6,12 +6,14 @@ function App() {
     <div className="App">
     <header className = "header">
       <img className = "logo"></img>
-      <span className = "title">Test App</span>
+      <span className = "title">Chat Bot 3000</span>
     </header>
 
     <footer className = "footer">
       <input className = "input"></input>
       <button className = "button">↑</button>
+      <button className = "img"></button>
+      <button className = "emoji"></button>
     </footer>
     </div>
   );

@@ -1,49 +1,60 @@
+/* Page settings */
 .App {
-  background: linear-gradient(to right, #23074d, #cc5333); 
+  width: 100vw;
+  background: linear-gradient(to top, #373b44, #4286f4);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Header */
 .header {
   height: 3rem;
-  width: 100%;
-  background: linear-gradient(to right, #000000, #434343);
+  width: 100vw;
+  background: linear-gradient(to top, #005c97, #363795);
   border-bottom: 2px solid rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
 }
 
+/* Header element: Webpage logo */
 .logo {
-  width: 3rem;
-  height: 3rem;
-  margin: 1rem;
-  border: 1.5px solid white;
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem;
+  border: 1px solid white;
   border-radius: 50%;
-  background: url(http://2.bp.blogspot.com/-5Yl8Tj2M-aE/Ujwj8rH1InI/AAAAAAAAChY/WSs2S8oAArU/s1600/3d-cool-logo-1024x819.jpg);
+  background: url(chatbot.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+/* Header element: Webpage title */
 .title {
   color: white;
   font-size: 2rem;
   font-weight: bolder;
 }
 
+/* Footer */
 .footer {
   height: 3rem;
   width: 100%;
   border-top: 2px solid rgb(255, 255, 255);
-  background: linear-gradient(to right, #000000, #434343);
+  background: linear-gradient(to top, #232526, #414345);
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
   position: relative;
+  box-sizing: border-box;
 }
 
+/* Footer element: Text box for input */
 .input {
   width: 80%;
   height: 2rem;
@@ -55,6 +66,7 @@
   padding-left: 0.5rem;
 }
 
+/* Footer element - input: Send message button */
 .button {
   font-size: 1rem;
   font-weight: bold;
@@ -62,8 +74,35 @@
   height:2rem;
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
-  border: 2px solid black;
+  border: 2px solid rgb(59, 59, 59);
   position: relative;
   cursor: pointer;
   right: 2.15rem;
+}
+
+/* Footer element: Add image button */
+.img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: url(image.png);
+  background-size: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+/* Footer element: Add emoji button */
+.emoji {
+  margin-left: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: url(emoji.png);
+  background-size: 2.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
 }
