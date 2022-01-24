@@ -86,11 +86,16 @@
   height: 3.5rem;
   border-radius: 50%;
   background: url(image.png);
-  background-size: 3rem;
+  background-size: 2.5rem;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
+}
+
+/* Image button hover setting */
+.img:hover {
+  background-size: 3rem;
 }
 
 /* Footer element: Add emoji button */
@@ -100,9 +105,14 @@
   height: 3rem;
   border-radius: 50%;
   background: url(emoji.png);
-  background-size: 2.5rem;
+  background-size: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
   border: none;
+}
+
+/* Emoji button hover setting */
+.emoji:hover {
+  background-size: 2.5rem;
 }
