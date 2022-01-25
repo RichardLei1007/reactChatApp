@@ -1,6 +1,5 @@
 /* Page settings */
 .App {
-  width: 100vw;
   background: linear-gradient(to top, #373b44, #4286f4);
   height: 100vh;
   display: flex;
@@ -41,45 +40,6 @@
   font-weight: bolder;
 }
 
-/* Footer */
-.footer {
-  height: 3rem;
-  width: 100%;
-  border-top: 2px solid rgb(255, 255, 255);
-  background: linear-gradient(to top, #232526, #414345);
-  display: flex;
-  align-items: center;
-  padding: 2.5rem;
-  position: relative;
-  box-sizing: border-box;
-}
-
-/* Footer element: Text box for input */
-.input {
-  width: 80%;
-  height: 2rem;
-  border: 2px solid rgb(100, 100, 100);
-  border-radius: 1rem;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 1.25rem;
-  padding-left: 0.5rem;
-}
-
-/* Footer element - input: Send message button */
-.button {
-  font-size: 1rem;
-  font-weight: bold;
-  width:2rem;
-  height:2rem;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid rgb(59, 59, 59);
-  position: relative;
-  cursor: pointer;
-  right: 2.15rem;
-}
-
 /* Footer element: Add image button */
 .img {
   width: 3.5rem;
@@ -98,21 +58,22 @@
   background-size: 3rem;
 }
 
-/* Footer element: Add emoji button */
-.emoji {
-  margin-left: 2rem;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background: url(emoji.png);
-  background-size: 2rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  border: none;
+.messages {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  max-height: calc(100vh - 6rem);
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 0.7rem;
+  text-align: right;
 }
 
-/* Emoji button hover setting */
-.emoji:hover {
-  background-size: 2.5rem;
+.message {
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  margin: 0.3rem;
+  background: linear-gradient(to right, #232526, #414345);
+  border-radius: 0.75rem;
 }
