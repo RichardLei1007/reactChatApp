@@ -13,7 +13,6 @@ function App() {
     };
     setMessages([newMessage, ...messages]);
   }
-  console.log(messages);
   return (
     <div className="App">
     <header className = "header">

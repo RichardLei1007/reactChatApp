@@ -1,0 +1,13 @@
+.profile {
+    display: flex;
+    flex-direction: right;
+    margin-left: 1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: url(profile.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
