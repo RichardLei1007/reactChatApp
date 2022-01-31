@@ -7,9 +7,7 @@ function App() {
   const [messages, setMessages] = useState([]);
   function sendMessage(msg) {
     const newMessage = {
-      msg,
-      time: Date.now(),
-      user: "Me",
+      msg
     };
     setMessages([newMessage, ...messages]);
   }
