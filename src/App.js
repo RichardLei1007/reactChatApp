@@ -6,7 +6,7 @@ function App() {
     <div className="App">
     <header className = "header">
       <img className = "logo"></img>
-      <span className = "title">Test App</span>
+      <span className = "title">Chat Bot 3000</span>
     </header>
 
     <footer className = "footer">
