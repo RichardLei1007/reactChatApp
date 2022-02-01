@@ -1,69 +1,67 @@
+/* Page settings */
 .App {
-  background: linear-gradient(to right, #23074d, #cc5333); 
+  background: linear-gradient(to top, #373b44, #4286f4);
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Header for page */
 .header {
   height: 3rem;
-  width: 100%;
-  background: linear-gradient(to right, #000000, #434343);
+  width: 100vw;
+  background: linear-gradient(to top, #005c97, #363795);
   border-bottom: 2px solid rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 2.5rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
 }
 
+/* Header element: Webpage logo */
 .logo {
-  width: 3rem;
-  height: 3rem;
-  margin: 1rem;
-  border: 1.5px solid white;
+  width: 4rem;
+  height: 4rem;
+  margin: 2rem;
+  border: 1px solid white;
   border-radius: 50%;
-  background: url(http://2.bp.blogspot.com/-5Yl8Tj2M-aE/Ujwj8rH1InI/AAAAAAAAChY/WSs2S8oAArU/s1600/3d-cool-logo-1024x819.jpg);
+  background: url(chatbot.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+/* Header element: Webpage title */
 .title {
   color: white;
   font-size: 2rem;
   font-weight: bolder;
 }
 
-.footer {
-  height: 3rem;
-  width: 100%;
-  border-top: 2px solid rgb(255, 255, 255);
-  background: linear-gradient(to right, #000000, #434343);
+/* Styling for displayed messages on screen */
+.messages {
   display: flex;
-  align-items: center;
-  padding: 1rem;
-  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  max-height: calc(100vh - 6rem);
+  box-sizing: border-box;
+  overflow: auto;
+  padding: 0.7rem;
+  text-align: right;
 }
 
-.input {
-  width: 80%;
-  height: 2rem;
-  border: 2px solid rgb(100, 100, 100);
-  border-radius: 1rem;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 1.25rem;
-  padding-left: 0.5rem;
-}
-
-.button {
-  font-size: 1rem;
-  font-weight: bold;
-  width:2rem;
-  height:2rem;
-  border-radius: 50%;
-  background-color: rgb(255, 255, 255);
-  border: 2px solid black;
-  position: relative;
-  cursor: pointer;
-  right: 2.15rem;
+/* Styling for each individual messages */
+.message {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  margin: 0.3rem;
+  background: linear-gradient(to right, #232526, #414345);
+  border-radius: 0.75rem;
+  max-width: 65vw;
+  word-break: break-all;
 }
