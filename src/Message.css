@@ -1,8 +1,8 @@
 /* style for profile picture in messages */
 .profile {
-    margin-left: 1rem;
-    height: 1.5rem;
-    width: 1.5rem;
+    /* margin-left: 1rem; */
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     border: none;
     background: url(profile.png);
     background-size: 1.5rem;

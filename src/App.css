@@ -48,7 +48,7 @@
   box-sizing: border-box;
   overflow: auto;
   padding: 0.7rem;
-  text-align: right;
+  text-align: left;
 }
 
 /* Styling for each individual messages */
@@ -62,5 +62,10 @@
   background: linear-gradient(to right, #232526, #414345);
   border-radius: 0.75rem;
   max-width: 65vw;
+  /* word-break: break-all; */
+}
+
+.messageText {
+  margin-right: 1rem;
   word-break: break-all;
 }
