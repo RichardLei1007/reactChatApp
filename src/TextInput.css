@@ -12,7 +12,7 @@
   
   /* Footer element: Text box for input */
   .input {
-    width: 100%;
+    width: calc(100% - 50px);
     height: 1.5rem;
     border: 2px solid rgb(100, 100, 100);
     border-radius: 1rem;
@@ -32,10 +32,10 @@
     background-size: 1rem;
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid rgb(59, 59, 59);
+    border: 0.09rem solid rgb(59, 59, 59);
     position: relative;
     cursor: pointer;
-    right: 1.5rem;
+    right: 1.55rem;
   }
 
   .emoji {
@@ -51,4 +51,14 @@
 
   .emoji:hover {
     background-size: 2.5rem;
+  }
+
+  .camera {
+    display: flex;
+    border-radius: 50%;
+    border: none;
+    margin-right: 1.5rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    background-color: white;
   }

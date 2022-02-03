@@ -55,17 +55,20 @@
 .message {
   display: flex;
   align-items: flex-start;
-  color: white;
-  font-size: 1rem;
-  padding: 0.3rem 0.5rem;
-  margin: 0.3rem;
-  background: linear-gradient(to right, #232526, #414345);
+  /* background: linear-gradient(to right, #232526, #414345); */
   border-radius: 0.75rem;
   max-width: 65vw;
-  /* word-break: break-all; */
 }
 
 .messageText {
+  color: white;
+  background: linear-gradient(to right, #232526, #414345);
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.75rem;
   margin-right: 1rem;
-  word-break: break-all;
+  word-wrap:break-word;
+  /* word-break: break-all; */
+  hyphens: auto;
 }
