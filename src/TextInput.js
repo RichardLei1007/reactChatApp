@@ -26,9 +26,8 @@ function TextInput(props) {
     // Footer components
     return (
         <footer className = "footer">
-            <button className = "camera" onClick = {props.showCamera}
-                style = {{left:'0.5rem', right: 'auto'}}>
-                <FiCamera style = {{height:'1.5rem', width:'1.5rem'}} />
+            <button className = "camera" onClick = {props.showCamera}>
+                <FiCamera className = "cameraButton"></FiCamera>
             </button>
             <input className = "input" value = {text} onChange = {(e) => setText(e.target.value)} onKeyPress={onKeyPress}></input>
             <button className = "button" onClick = {send}></button>
