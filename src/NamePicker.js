@@ -17,6 +17,7 @@ function NamePicker(props) {
     function changeInput() {
         if (style == 'inputOff') {
             setStyle('inputOn');
+            setName('');
         }
         else if (style == 'inputOn') {
             setStyle('inputOff');
