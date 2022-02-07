@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FiSend, FiCamera } from 'react-icons/fi';
 
 function TextInput(props) {
-    const [text, setText] = useState("")
+    const [text, setText] = useState("");
 
     // Saves input message and clears input box
     function send() {

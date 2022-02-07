@@ -9,34 +9,37 @@
 
 /* Header for page */
 .header {
-  height: 2rem;
+  height: 1.5rem;
   width: 100vw;
   background: linear-gradient(to top, #005c97, #363795);
   border-bottom: 2px solid rgb(255, 255, 255);
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   padding-left: 0.5rem;
+  justify-content: space-between;
   box-sizing: border-box;
+}
+
+/* Header element: Webpage title */
+.title {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
 
 /* Header element: Webpage logo */
 .logo {
-  width: 3rem;
-  height: 3rem;
-  margin: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
   border: none;
   background: url(chatbot.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-/* Header element: Webpage title */
-.title {
-  color: white;
-  font-size: 2rem;
-  font-weight: bolder;
 }
 
 /* Styling for displayed messages on screen */
@@ -63,10 +66,10 @@
 .messageText {
   color: white;
   background: linear-gradient(to right, #232526, #414345);
-  font-size: 1rem;
+  font-size: 0.8rem;
   padding: 0.3rem 0.5rem;
   margin-bottom: 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   margin-right: 1rem;
   word-wrap:break-word;
   /* word-break: break-all; */
