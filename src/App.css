@@ -47,9 +47,9 @@
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  flex: 1;
   box-sizing: border-box;
   overflow: auto;
+  flex: 1;
   padding: 0.7rem;
   text-align: left;
 }
@@ -58,9 +58,11 @@
 .message {
   display: flex;
   align-items: flex-start;
+  margin-top: 0.5rem;
   /* background: linear-gradient(to right, #232526, #414345); */
   border-radius: 0.75rem;
-  max-width: 65vw;
+  max-width: 50vw;
+  position: relative;
 }
 
 .messageText {
@@ -70,7 +72,7 @@
   padding: 0.3rem 0.5rem;
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.6rem;
   word-wrap:break-word;
   /* word-break: break-all; */
   hyphens: auto;

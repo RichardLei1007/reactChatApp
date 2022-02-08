@@ -4,28 +4,28 @@ import Message from './Message';
 import NamePicker from './NamePicker';
 import { useState } from "react";
 import Camera from 'react-snap-pic';
+import {useDB, db} from "./db";
 
 function App() {
-  const [messages, setMessages] = useState([]);
+  const messages = useDB();
+  //const [messages, setMessage] = useState("");
   const [showCamera, setShowCamera] = useState(false);
-  const [currentUsername, updateUsername] = useState('');
+  const [currentUsername, saveUsername] = useState("");
 
-  function sendMessage(msg) {
-    if (!msg) return;
+  function sendMessage(text) {
+    if (!text) return;
     const newMessage = {
-      msg
+      text: text,
+      time: Date.now(),
+      user: currentUsername,
     };
-    setMessages([newMessage, ...messages]);
+    db.send(newMessage);
+    //setMessages([newMessage, ...messages]);
   }
 
   let takePicture = (img) => {
     console.log(img)
     setShowCamera(false)
-  }
-
-  function saveUsername(uname) {
-    updateUsername(uname);
-    console.log(uname);
   }
 
   return (

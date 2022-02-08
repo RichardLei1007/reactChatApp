@@ -15,13 +15,13 @@ function NamePicker(props) {
 
     // Change the style of the input container upon button click
     function changeInput() {
-        if (style == 'inputOff') {
+        if (style === 'inputOff') {
             setStyle('inputOn');
             setName('');
         }
-        else if (style == 'inputOn') {
+        else if (style === 'inputOn') {
             setStyle('inputOff');
-            if (name == '') {
+            if (name === '') {
                 setName('Set Username:');
             }
         }
@@ -29,10 +29,10 @@ function NamePicker(props) {
 
     // Change the style of the button upon click
     function changeButton() {
-        if (button == 'buttonEdit') {
+        if (button === 'buttonEdit') {
             setButton('buttonConfirm');
         }
-        else if (button == 'buttonConfirm') {
+        else if (button === 'buttonConfirm') {
             setButton('buttonEdit');
         }
     }
@@ -43,7 +43,7 @@ function NamePicker(props) {
         changeInput();
         changeButton();
         // Saves the username in input
-        if (button == 'buttonConfirm') {
+        if (button === 'buttonConfirm') {
             props.saveUsername(name);
             // console.log(name);
         }
@@ -51,7 +51,7 @@ function NamePicker(props) {
 
     // Adds enter as a secondary way to run everything
     function changeName(e) {
-        if (e.key == "Enter") {
+        if (e.key === "Enter") {
             setName(name);
             changeStates();
         }
