@@ -5,19 +5,20 @@ import NamePicker from './NamePicker';
 import { useState } from "react";
 import Camera from 'react-snap-pic';
 import {useDB, db} from "./db";
+import { render } from '@testing-library/react';
 
 function App() {
   const messages = useDB();
   //const [messages, setMessage] = useState("");
   const [showCamera, setShowCamera] = useState(false);
-  const [currentUsername, saveUsername] = useState("");
+  const [username, saveUsername] = useState("");
 
   function sendMessage(text) {
     if (!text) return;
     const newMessage = {
       text: text,
       time: Date.now(),
-      user: currentUsername,
+      user: username,
     };
     db.send(newMessage);
     //setMessages([newMessage, ...messages]);
@@ -27,6 +28,16 @@ function App() {
     console.log(img)
     setShowCamera(false)
   }
+
+  // function renderMessages() {
+  //   let sortedMessages = messages.map((msg, i) => {
+  //     return <Message {...msg} key = {i} fromMe = {msg.user === username}></Message>;
+  //   })
+  //   console.log(sortedMessages)
+  //   return sortedMessages
+  // }
+
+  console.log(messages);
 
   return (
     <div className="App">
@@ -39,8 +50,9 @@ function App() {
       </header>
       {showCamera && <Camera takePicture = {takePicture} />};
       <div className = "messages">
-        {messages.map((msg) => {
-          return <Message {...msg}></Message>;
+        {/* {renderMessages()} */}
+        {messages.map((msg, i) => {
+          return <Message {...msg} key = {i} fromMe = {msg.user === username}></Message>;
         })}
       </div>
       <TextInput sendMessage = {sendMessage} showCamera = {() => setShowCamera(true)} />
