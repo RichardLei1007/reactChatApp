@@ -75,6 +75,7 @@ const firebaseConfig = {
   storageBucket: "reactchatapp-c0d64.appspot.com",
   messagingSenderId: "1031837222097",
   appId: "1:1031837222097:web:ccf1b4d115ab44cc3fb1f0",
+  measurementId: "G-RZJ3JM7JZ7"
 };
 
 const app = initializeApp(firebaseConfig);
