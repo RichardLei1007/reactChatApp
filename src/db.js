@@ -59,13 +59,22 @@ db.delete = async function (id) {
 
 export { db, useDB };
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCxnHdHGicbw16DmQfEbNVy7XD6ENprVNQ",
+//   authDomain: "chatter2021-2b8fb.firebaseapp.com",
+//   projectId: "chatter2021-2b8fb",
+//   storageBucket: "chatter2021-2b8fb.appspot.com",
+//   messagingSenderId: "778098356347",
+//   appId: "1:778098356347:web:c396b31d7a0a5c0c6c32de",
+// };
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCxnHdHGicbw16DmQfEbNVy7XD6ENprVNQ",
-  authDomain: "chatter2021-2b8fb.firebaseapp.com",
-  projectId: "chatter2021-2b8fb",
-  storageBucket: "chatter2021-2b8fb.appspot.com",
-  messagingSenderId: "778098356347",
-  appId: "1:778098356347:web:c396b31d7a0a5c0c6c32de",
+  apiKey: "AIzaSyCr4_M0378sfclsVMhvv1Eo5IYNX1K3FXU",
+  authDomain: "reactchatapp-c0d64.firebaseapp.com",
+  projectId: "reactchatapp-c0d64",
+  storageBucket: "reactchatapp-c0d64.appspot.com",
+  messagingSenderId: "1031837222097",
+  appId: "1:1031837222097:web:ccf1b4d115ab44cc3fb1f0",
 };
 
 const app = initializeApp(firebaseConfig);
