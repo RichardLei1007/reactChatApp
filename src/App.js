@@ -29,13 +29,17 @@ function App() {
     setShowCamera(false)
   }
 
-  // function renderMessages() {
-  //   let sortedMessages = messages.map((msg, i) => {
-  //     return <Message {...msg} key = {i} fromMe = {msg.user === username}></Message>;
-  //   })
-  //   console.log(sortedMessages)
-  //   return sortedMessages
-  // }
+  function renderMessages() {
+    messages.sort(
+      (a, b) => b.time - a.time
+    );
+      console.log(messages)
+    let renderedMessages = messages.map((msg, i) => {
+      return <Message {...msg} key = {i} fromMe = {msg.user === username}></Message>;
+    })
+    
+    return renderedMessages
+  }
 
   console.log(messages);
 
