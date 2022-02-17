@@ -52,7 +52,7 @@ function App() {
         </div>
         <NamePicker saveUsername = {saveUsername}></NamePicker>
       </header>
-      {showCamera && <Camera takePicture = {takePicture} />};
+      {showCamera && <Camera takePicture = {takePicture} />}
       <div className = "messages">
         {/* {renderMessages()} */}
         {messages.map((msg, i) => {
